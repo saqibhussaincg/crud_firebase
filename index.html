@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data Base</title>
+    <!--Firebase Libraries-->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-database.js"></script>
+
+
+    <script id='module'>
+        // Your web app's Firebase configuration
+        var firebaseConfig = {
+            apiKey: "AIzaSyByzeU9wMvMWM2letylNSvoXSPwFLIPtrM",
+            authDomain: "databasesaqib.firebaseapp.com",
+            projectId: "databasesaqib",
+            storageBucket: "databasesaqib.appspot.com",
+            messagingSenderId: "296795039671",
+            appId: "1:296795039671:web:3f80b6c43e695bb95c2a32"
+        };
+
+        // Initialize Firebase
+        // const app = initializeApp(firebaseConfig);
+        firebase.initializeApp(firebaseConfig);
+
+
+    </script>
+</head>
+
+<body>
+    name <input id="namebox" type="text"></input> <br><br>
+    roll number <input id="rollbox" type="text"></input> <br><br>
+    section <input id="secbox" type="text"></input> <br><br>
+    gender <input id="genbox" type="text"></input> <br><br>
+
+
+    <button id="insert">insert</button>
+    <button id="select">select</button>
+    <button id="update">update</button>
+    <button id="delete">delete</button>
+
+    <h1></h1>
+
+    <script src="apps.js"></script>
+</body>
+
+</html>
